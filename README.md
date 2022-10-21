@@ -1,10 +1,13 @@
-Install requirements
+### Code for the paper:
+[Borrowing from yourself: Faster future video segmentation with partial channel update](https://arxiv.org/abs/2202.05748)
+
+## Install requirements
 ```
 pip install -r requirements.txt
 
 ```
 
-# HOW TO TRAIN
+## HOW TO TRAIN
 
 1. Choose model and configuration from `scripts` folder
 1. Add path to the root of the Cityscapes dataset in the json config file in variable `db_root`
@@ -19,7 +22,7 @@ Examples:
 
 ```
 
-# HOW TO EVALUTATE
+## HOW TO EVALUTATE
 
 1. Check model and configuration of trained model from `scripts` folder
 1. Run evaluation using the `run.sh` script with the folder name as first parameter and the config file name as second parameter, and the path to the learned model as third parameter
