@@ -1,0 +1,31 @@
+{
+    "save_dir": "/path/to/savedir",
+    "db_root": "/path/to/cityscapes",
+    "save_every_epoch": true,
+    "log_level": "INFO",
+    "archi": "deeplab",
+    "archi_name": "slim_cwm_deeplab",
+    "backbone": "resnet18",
+    "gpu_ids": [0],
+    "workers": 10,
+    "workers_val": 8,
+    "batch_size": 6,
+    "val_batch_size": 2,
+    "optim_step_each": 1,
+    "eval_interval": 3,
+    "epochs": 500,
+    "crop_size": [700, 700],
+    "optim": "sgd",
+    "scheduler": "poly",
+    "poly_power": 3.0,
+
+    "lr": 0.05,
+    "weight_decay": 0.0005,
+    
+    "width_mult": 1.0,
+    "masks": [0, 1],
+    "mix": [0,1],
+    "frame_numbers": [12, 13, 14, 15, 16, 17, 18],
+    "checkname": "cwm_deeplab_0",
+    "pretrained": ""
+}

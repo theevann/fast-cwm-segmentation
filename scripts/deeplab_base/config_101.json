@@ -1,0 +1,21 @@
+{
+    "checkname": "dl_r101_sgd",
+    "save_dir": "/path/to/savedir",
+    "db_root": "/path/to/cityscapes",
+    "log_level": "INFO",
+    "archi": "deeplab",
+    "backbone": "resnet101",
+    "gpu_ids": [0],
+    "workers": 12,
+    "epochs": 250,
+    "eval_interval": 3,
+    "frame_numbers": [19],
+    "crop_size": [750,750],
+    "batch_size": 10,
+    "val_batch_size": 5,
+    "optim": "sgd",
+    "lr": 0.05,
+    "weight_decay": 0.0005,
+    "scheduler": "poly",
+    "poly_power": 3.0
+}

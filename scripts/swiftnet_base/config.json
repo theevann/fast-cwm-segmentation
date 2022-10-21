@@ -1,0 +1,21 @@
+{
+    "checkname": "sw_r18_base",
+    "save_dir": "/path/to/savedir",
+    "db_root": "/path/to/cityscapes",
+    "log_level": "INFO",
+    "archi": "swiftnet",
+    "backbone": "resnet18",
+    "gpu_ids": [0],
+    "workers": 12,
+    "epochs": 250,
+    "eval_interval": 3,
+    "frame_numbers": [19],
+    "crop_size": [768,768],
+    "batch_size": 12,
+    "val_batch_size": 8,
+    "optim": "adam",
+    "lr": 0.0004,
+    "weight_decay": 0.0001,
+    "scheduler": "cos",
+    "cos_eta_min": 1e-6
+}

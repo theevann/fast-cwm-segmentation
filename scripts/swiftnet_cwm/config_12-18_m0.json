@@ -1,0 +1,31 @@
+{
+    "save_dir": "/path/to/savedir",
+    "db_root": "/path/to/cityscapes",
+    "save_every_epoch": true,
+    "log_level": "INFO",
+    "archi": "swiftnet",
+    "archi_name": "slim_cwm_swiftnet",
+    "backbone": "resnet18",
+    "gpu_ids": [0],
+    "workers": 10,
+    "workers_val": 8,
+    "batch_size": 6,
+    "val_batch_size": 2,
+    "optim_step_each": 1,
+    "eval_interval": 3,
+    "epochs": 500,
+    "crop_size": [700, 700],
+    "optim": "adam",
+    "scheduler": "cos",
+    "cos_eta_min": 1e-6,
+    
+    "lr": 0.00004,
+    "weight_decay": 0.00001,
+    
+    "width_mult": 1.0,
+    "masks": [0, 1],
+    "mix": [0,1],
+    "frame_numbers": [12, 13, 14, 15, 16, 17, 18],
+    "checkname": "cwm_swiftnet_0",
+    "pretrained": ""
+}
